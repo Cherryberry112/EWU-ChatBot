@@ -2,6 +2,7 @@
 const modalContainer = document.getElementById('modal-container');
 const modalBody = document.getElementById('modal-body');
 const closeBtn = document.getElementById('close-btn');
+// IMPORTANT: Update this selector to include the newly changed RAG Bot and Standard Bot
 const modalOptionBtns = document.querySelectorAll('.option-btn.modal-trigger');
 
 const fallbackImg = "this.src='https://placehold.co/60x60/333/ccc?text=?'";
@@ -117,12 +118,33 @@ modalOptionBtns.forEach(btn => {
     btn.addEventListener('click', () => {
         const optionName = btn.dataset.option;
         const optionDesc = btn.getAttribute('data-tooltip');
+        let additionalContent = '';
+
+        // Add custom content based on the option name
+        if (optionName === 'RAG Bot') {
+            // CUSTOM MESSAGE FOR RAG BOT
+            additionalContent = `
+                <p style="margin-bottom: 0.5rem;">Requires an always running GPU-based heavy server to run the model</p>
+                <p>Finding workaround soon : )</p>
+            `;
+        } else if (optionName === 'Standard Bot') {
+             // CUSTOM MESSAGE FOR STANDARD BOT
+            additionalContent = `
+                <p style="margin-bottom: 0.5rem;">Required paid hosting due to the large space to hold the model and the need for a GPU-based heavy server to run the model</p>
+                <p>Finding workaround soon : )</p>
+            `;
+        } else {
+            // Default content for Enhanced and Advanced Bot
+            additionalContent = `
+                <p>This chatbot interaction is currently under development.</p>
+                <p>Please check back soon!</p>
+            `;
+        }
 
         const optionContent = `
             <h2>${optionName}</h2>
             <p style="font-size: 1rem; color: var(--text-color); margin-bottom: 1.5rem;">${optionDesc}</p>
-            <p>This chatbot interaction is currently under development.</p>
-            <p>Please check back soon!</p>
+            ${additionalContent}
         `;
         openModal(optionContent);
     });
