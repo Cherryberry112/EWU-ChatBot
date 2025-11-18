@@ -122,9 +122,19 @@ modalOptionBtns.forEach(btn => {
 
         // Only handle RAG Bot with the custom message
         if (optionName === 'RAG Bot') {
-            // CUSTOM MESSAGE FOR RAG BOT
+        // Replace the simple message with an iframe pointing to the Hugging Face space
             additionalContent = `
-                <p>Requires an always running GPU-based heavy server to run the model<br>Finding workaround soon : )</p>
+                <iframe 
+                    src="https://huggingface.co/spaces/ftftr/rag" 
+                    width="100%" 
+                    height="600px" 
+                    style="border:none; border-radius: 8px;"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                ></iframe>
+                <p style="margin-top: 0.5rem; font-size: 0.9rem; color: var(--text-color);">
+                    If the chatbot doesn’t load, you can also open it in a new tab:
+                    <a href="https://huggingface.co/spaces/ftftr/rag" target="_blank" rel="noopener noreferrer">Open RAG Bot</a>
+                </p>
             `;
         } else {
             // Default content for all other modal buttons (Standard Bot if it was a modal, Enhanced, and Advanced Bot)
@@ -160,3 +170,4 @@ document.addEventListener('keydown', (event) => {
         closeModal();
     }
 });
+
