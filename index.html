@@ -87,25 +87,26 @@
 
       <!-- RAG Bot (modal trigger or direct link – pick one) -->
       <!-- If you want a modal: -->
-      <button
-        class="option-btn modal-trigger"
-        data-option="RAG Bot"
-        data-tooltip="Retrieval-Augmented Chatbot"
-        type="button"
-      >
-        <svg
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        >
-          <path
-            d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20v2H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v15H6.5A2.5 2.5 0 0 1 4 4.5v15z"
-          />
-        </svg>
-        <span>RAG Bot</span>
-      </button>
+      <a
+  href="https://huggingface.co/spaces/ftftr/rag"
+  class="option-btn"
+  data-tooltip="Retrieval-Augmented Chatbot"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <svg
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke-width="2"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  >
+    <path
+      d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20v2H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v15H6.5A2.5 2.5 0 0 1 4 4.5v15z"
+    />
+  </svg>
+  <span>RAG Bot</span>
+</a>
 
       <!-- SLM Bot (Hugging Face space) -->
       <a
@@ -216,3 +217,4 @@
   <script src="script.js"></script>
 </body>
 </html>
+
