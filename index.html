@@ -1,139 +1,106 @@
-<!DOCTYPE html>
-<html lang="en">
+</div>
+</div>
+<div class="dropdown">
+<button class="dropdown-btn">Supervisor</button>
+<div class="dropdown-content" id="sup-dropdown-content">
+</div>
+</div>
+<div class="dropdown">
+<button class="dropdown-btn">Goal</button>
+<div class="dropdown-content" id="goal-dropdown-content">
+<p>Our primary objective is to engineer and evaluate a suite of multilingual chatbots. By comparing diverse architectural approaches, we aim to identify the optimal framework for developing a robust, efficient, and user-friendly chatbot solution tailored for the university ecosystem.</p>
+</div>
+</div>
+</div>
+</div>
+</nav>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>University Chatbot Portal</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Jura:wght@400;600;700&display=swap" rel="stylesheet">
+<div class="container">
+<div class="title-container">
+<h1>Explore the Future of AI Chatbots</h1>
+<p class="subtitle">Select one of our advanced chatbot models to begin your interaction.</p>
+</div>
 
-    <link rel="stylesheet" href="style.css"> 
-</head>
-
-<body>
-
-    <nav>
-        <div class="nav-container">
-            <div class="nav-logo-text">Chatbots</div>
-
-            <div class="nav-menu">
-                <div class="dropdown">
-                    <button class="dropdown-btn">Developers</button>
-                    <div class="dropdown-content" id="dev-dropdown-content">
-                    </div>
-                </div>
-                <div class="dropdown">
-                    <button class="dropdown-btn">Supervisor</button>
-                    <div class="dropdown-content" id="sup-dropdown-content">
-                    </div>
-                </div>
-                <div class="dropdown">
-                    <button class="dropdown-btn">Goal</button>
-                    <div class="dropdown-content" id="goal-dropdown-content">
-                        <p>Our primary objective is to engineer and evaluate a suite of multilingual chatbots. By comparing diverse architectural approaches, we aim to identify the optimal framework for developing a robust, efficient, and user-friendly chatbot solution tailored for the university ecosystem.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </nav>
-
-    <div class="container">
-        <div class="title-container">
-            <h1>Explore the Future of AI Chatbots</h1>
-            <p class="subtitle">Select one of our advanced chatbot models to begin your interaction.</p>
-        </div>
-
-        <div class="options-grid">
-            <!-- Rasa Bot -->
+<div class="options-grid">
             <a href="PASTE_URL_HERE_1" class="option-btn" data-tooltip="Rule-based Chatbot" target="_blank"
-                rel="noopener noreferrer">
-                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <rect x="4" y="8" width="16" height="12" rx="2" />
-                    <path d="M9 12v2" />
-                    <path d="M15 12v2" />
-                    <path d="M8 8V6a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2" />
-                    <path d="M12 4V2" />
-                </svg>
-                <span>Rasa Bot</span>
-            </a>
+            <a href="https://atkiya.github.io/rasa_interface/" class="option-btn" data-tooltip="Rule-based Chatbot" target="_blank"
+rel="noopener noreferrer">
+<svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+<rect x="4" y="8" width="16" height="12" rx="2" />
+<path d="M9 12v2" />
+<path d="M15 12v2" />
+<path d="M8 8V6a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2" />
+<path d="M12 4V2" />
+</svg>
+<span>Rasa Bot</span>
+</a>
+<button class="option-btn modal-trigger" data-option="RAG Bot"
+data-tooltip="Retrieval-Augmented Chatbot" tabindex="0">
+<svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+<path
+d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20v2H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v15H6.5A2.5 2.5 0 0 1 4 4.5v15z" />
+</svg>
+<span>RAG Bot</span>
+</button>
+<a href="https://huggingface.co/spaces/2001Samir/ewu-chatbot-slm" class="option-btn" data-tooltip="A Custom Small Language Model Chatbot" target="_blank"
+rel="noopener noreferrer">
+<svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+<path
+d="M9.5 2A2.5 2.5 0 0 1 12 4.5v0A2.5 2.5 0 0 1 9.5 7v0A2.5 2.5 0 0 1 7 9.5v0A2.5 2.5 0 0 1 9.5 12v0A2.5 2.5 0 0 1 7 14.5v0A2.5 2.5 0 0 1 9.5 17v0A2.5 2.5 0 0 1 7 19.5v0A2.5 2.5 0 0 1 9.5 22" />
+<path
+d="M14.5 2a2.5 2.5 0 0 1 2.5 2.5v0a2.5 2.5 0 0 1-2.5 2.5v0a2.5 2.5 0 0 1 2.5 2.5v0a2.5 2.5 0 0 1-2.5 2.5v0a2.5 2.5 0 0 1 2.5 2.5v0a2.5 2.5 0 0 1-2.5 2.5v0a2.5 2.5 0 0 1 2.5 2.5v0a2.5 2.5 0 0 1-2.5 2.5" />
+<path d="M12 4.5V22" />
+</svg>
+<span>SLM Bot</span>
+</a>
+<a href="https://huggingface.co/spaces/2001Samir/phi2_with_rag_chatbot" class="option-btn" data-tooltip="A Custom Small Language Model Chatbot" target="_blank"
+rel="noopener noreferrer">
+<svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+<path
+d="M9.5 2A2.5 2.5 0 0 1 12 4.5v0A2.5 2.5 0 0 1 9.5 7v0A2.5 2.5 0 0 1 7 9.5v0A2.5 2.5 0 0 1 9.5 12v0A2.5 2.5 0 0 1 7 14.5v0A2.5 2.5 0 0 1 9.5 17v0A2.5 2.5 0 0 1 7 19.5v0A2.5 2.5 0 0 1 9.5 22" />
+<path
+d="M14.5 2a2.5 2.5 0 0 1 2.5 2.5v0a2.5 2.5 0 0 1-2.5 2.5v0a2.5 2.5 0 0 1 2.5 2.5v0a2.5 2.5 0 0 1-2.5 2.5v0a2.5 2.5 0 0 1 2.5 2.5v0a2.5 2.5 0 0 1-2.5 2.5v0a2.5 2.5 0 0 1 2.5 2.5v0a2.5 2.5 0 0 1-2.5 2.5" />
+<path d="M12 4.5V22" />
+</svg>
+<span>Standard Bot</span>
+</a>
 
-            <!-- RAG Bot -->
-            <a href="PASTE_URL_HERE_2" class="option-btn" data-tooltip="Retrieval-Augmented Chatbot" target="_blank"
-                rel="noopener noreferrer">
-                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path
-                        d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20v2H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v15H6.5A2.5 2.5 0 0 1 4 4.5v15z" />
-                </svg>
-                <span>RAG Bot</span>
-            </a>
+<button class="option-btn modal-trigger" data-option="Enhanced Combo"
+data-tooltip="PHI2 + RASA + RAG (Hybrid, Robust)" tabindex="0">
+<svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+<path d="M4 14h12v6H4zM4 8h12v6H4zM4 2h12v6H4zM19 10h3m-1.5-1.5v3" />
+</svg>
+<span>Enhanced Bot</span>
+</button>
+<button class="option-btn modal-trigger" data-option="Advanced Combo"
+data-tooltip="LLM + RASA + RAG (Rich, Resource-Heavy) " tabindex="0">
+<svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+<circle cx="12" cy="12" r="1.5"></circle>
+<path d="M19.07 4.93a10 10 0 0 0-14.14 0"></path>
+<path d="M4.93 19.07a10 10 0 0 0 14.14 0"></path>
+<path d="M12 2v2.5"></path>
+<path d="M12 19.5V22"></path>
+<path d="M4.93 4.93l1.77 1.77"></path>
+<path d="M17.3 17.3l1.77 1.77"></path>
+<path d="M2 12h2.5"></path>
+<path d="M19.5 12H22"></path>
+<path d="M4.93 19.07l1.77-1.77"></path>
+<path d="M17.3 6.7l1.77-1.77"></path>
+</svg>
+<span>Advanced Bot</span>
+</button>
+</div>
+</div>
 
-            <!-- SLM Bot -->
-            <a href="PASTE_URL_HERE_3" class="option-btn" data-tooltip="A Custom Small Language Model Chatbot" target="_blank"
-                rel="noopener noreferrer">
-                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path
-                        d="M9.5 2A2.5 2.5 0 0 1 12 4.5v0A2.5 2.5 0 0 1 9.5 7v0A2.5 2.5 0 0 1 7 9.5v0A2.5 2.5 0 0 1 9.5 12v0A2.5 2.5 0 0 1 7 14.5v0A2.5 2.5 0 0 1 9.5 17v0A2.5 2.5 0 0 1 7 19.5v0A2.5 2.5 0 0 1 9.5 22" />
-                    <path
-                        d="M14.5 2a2.5 2.5 0 0 1 2.5 2.5v0a2.5 2.5 0 0 1-2.5 2.5v0a2.5 2.5 0 0 1 2.5 2.5v0a2.5 2.5 0 0 1-2.5 2.5v0a2.5 2.5 0 0 1 2.5 2.5v0a2.5 2.5 0 0 1-2.5 2.5v0a2.5 2.5 0 0 1 2.5 2.5v0a2.5 2.5 0 0 1-2.5 2.5" />
-                    <path d="M12 4.5V22" />
-                </svg>
-                <span>SLM Bot</span>
-            </a>
+<div id="modal-container" class="modal-container">
+<div class="modal-content">
+<span class="close-btn" id="close-btn">&times;</span>
+<div id="modal-body">
+</div>
+</div>
+</div>
 
-            <!-- Standard Bot -->
-            <a href="PASTE_URL_HERE_4" class="option-btn" data-tooltip="PHI-2 + RAG (Hybrid, Lightweight, Fast)" target="_blank"
-                rel="noopener noreferrer">
-                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M4 14h12v6H4zM4 8h12v6H4zM4 2h12v6H4z" />
-                </svg>
-                <span>Standard Bot</span>
-            </a>
-
-            <!-- Enhanced Bot - DIRECT LINK (NO MODAL) -->
-            <a href="https://atkiya.github.io/hybrid-rasa-rag-slm-_interface/" 
-               class="option-btn direct-link" 
-               data-tooltip="PHI2 + RASA + RAG (Hybrid, Robust)" 
-               target="_blank" 
-               rel="noopener noreferrer">
-                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M4 14h12v6H4zM4 8h12v6H4zM4 2h12v6H4zM19 10h3m-1.5-1.5v3" />
-                </svg>
-                <span>Enhanced Bot</span>
-            </a>
-
-            <!-- Advanced Bot - MODAL TRIGGER -->
-            <button class="option-btn modal-trigger" data-option="Advanced Combo"
-                data-tooltip="LLM + RASA + RAG (Rich, Resource-Heavy)" tabindex="0">
-                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    ircle cx="12" cy="12" r="1.5"></circle>
-                    <path d="M19.07 4.93a10 10 0 0 0-14.14 0"></path>
-                    <path d="M4.93 19.07a10 10 0 0 0 14.14 0"></path>
-                    <path d="M12 2v2.5"></path>
-                    <path d="M12 19.5V22"></path>
-                    <path d="M4.93 4.93l1.77 1.77"></path>
-                    <path d="M17.3 17.3l1.77 1.77"></path>
-                    <path d="M2 12h2.5"></path>
-                    <path d="M19.5 12H22"></path>
-                    <path d="M4.93 19.07l1.77-1.77"></path>
-                    <path d="M17.3 6.7l1.77-1.77"></path>
-                </svg>
-                <span>Advanced Bot</span>
-            </button>
-        </div>
-    </div>
-
-    <!-- Modal Container -->
-    <div id="modal-container" class="modal-container">
-        <div class="modal-content">
-            <span class="close-btn" id="close-btn">&times;</span>
-            <div id="modal-body">
-            </div>
-        </div>
-    </div>
-
-    <script src="script.js"></script>
+<script src="script.js"></script>
 
 </body>
 
